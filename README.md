@@ -35,20 +35,20 @@ K-Means clustering (k=2) additionally segmented students by lifestyle/behavioral
 ## Key Findings
 
 - **No model meaningfully beat the naive baseline** of predicting every student passes. AUC values (0.46–0.59) hover only slightly above random guessing, and each classifier caught at most about a third of actual failures (KNN caught almost none).
-- **Number of past class failures is the single strongest predictor** across every method tested — it's the classification tree's only split, and it's what separates the K-means clusters most clearly.
+- **Number of past class failures is the single strongest predictor** across every method tested, it's the classification tree's only split, and it's what separates the K-means clusters most clearly.
 - Study time, absences, and social/alcohol activity showed a consistent but weaker secondary relationship with risk, in the expected direction.
 
 ## Business Recommendation
 
-**None of these models should be deployed on their own to drive intervention decisions.** Demographic and lifestyle data alone aren't sufficient for reliable early prediction — they should supplement, not substitute for, historical academic performance. In the meantime, number of past failures (paired with low study time, high absences, and high social/alcohol activity) is worth using as a lightweight, human-reviewed flag for optional outreach rather than an automated rule.
+**None of these models should be deployed on their own to drive intervention decisions.** Demographic and lifestyle data alone aren't sufficient for reliable early prediction and they should supplement, not substitute for, historical academic performance. In the meantime, number of past failures (paired with low study time, high absences, and high social/alcohol activity) is worth using as a lightweight, human-reviewed flag for optional outreach rather than an automated rule.
 
 ## Limitations & Future Work
 
 1. **Excluding G1/G2 by design** likely cost the most predictive signal available — next step is testing models that incorporate G1 once it's available a few weeks into term.
-2. **Class imbalance** (265 pass vs. 130 fail) biased models toward predicting "pass" — next step is class weighting, SMOTE, or threshold tuning.
-3. **Linear/shallow models** may miss real interactions between risk factors — next step is testing random forest / gradient boosting.
-4. **Binary pass/fail framing** discards information about borderline vs. clearly-at-risk students — next step is a tiered risk framing or direct regression on G3.
-5. **Clustering used a narrow, 6-variable feature set** with modest separation — next step is expanding features and testing alternative cluster counts/algorithms.
+2. **Class imbalance** (265 pass vs. 130 fail) biased models toward predicting "pass" and the next step is class weighting, SMOTE, or threshold tuning.
+3. **Linear/shallow models** may miss real interactions between risk factors and the next step is testing random forest / gradient boosting.
+4. **Binary pass/fail framing** discards information about borderline vs. clearly-at-risk students and the next step is a tiered risk framing or direct regression on G3.
+5. **Clustering used a narrow, 6-variable feature set** with modest separation and the next step is expanding features and testing alternative cluster counts/algorithms.
 
 ## Repo Contents
 
