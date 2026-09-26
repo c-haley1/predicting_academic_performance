@@ -44,7 +44,7 @@ K-Means clustering (k=2) additionally segmented students by lifestyle/behavioral
 
 ## Limitations & Future Work
 
-1. **Excluding G1/G2 by design** likely cost the most predictive signal available — next step is testing models that incorporate G1 once it's available a few weeks into term.
+1. **Excluding G1/G2 by design** likely cost the most predictive signal available and the next step is testing models that incorporate G1 once it's available a few weeks into term.
 2. **Class imbalance** (265 pass vs. 130 fail) biased models toward predicting "pass" and the next step is class weighting, SMOTE, or threshold tuning.
 3. **Linear/shallow models** may miss real interactions between risk factors and the next step is testing random forest / gradient boosting.
 4. **Binary pass/fail framing** discards information about borderline vs. clearly-at-risk students and the next step is a tiered risk framing or direct regression on G3.
