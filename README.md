@@ -1,6 +1,6 @@
 # Predicting Student Academic Math Performance
 
-Predictive modeling project exploring whether demographic, family, and lifestyle data available *before* a school term even begins — can identify students at risk of failing their math course, using the [UCI Student Performance dataset](https://archive.ics.uci.edu/dataset/320/student%2Bperformance) (Cortez & Silva, 2008).
+Predictive modeling project exploring whether demographic, family, and lifestyle data available *before* a school term even begins and can identify students at risk of failing their math course, using the [UCI Student Performance dataset](https://archive.ics.uci.edu/dataset/320/student%2Bperformance) (Cortez & Silva, 2008).
 
 ## Business Problem
 
