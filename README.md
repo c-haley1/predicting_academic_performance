@@ -1,12 +1,12 @@
 # Predicting Student Academic Math Performance
 
-Predictive modeling project exploring whether demographic, family, and lifestyle data — available *before* a school term even begins — can identify students at risk of failing their math course, using the [UCI Student Performance dataset](https://archive.ics.uci.edu/dataset/320/student%2Bperformance) (Cortez & Silva, 2008).
+Predictive modeling project exploring whether demographic, family, and lifestyle data available *before* a school term even begins — can identify students at risk of failing their math course, using the [UCI Student Performance dataset](https://archive.ics.uci.edu/dataset/320/student%2Bperformance) (Cortez & Silva, 2008).
 
 ## Business Problem
 
-By the time a school sees a final grade, the term is over and the window for intervention has closed. Schools already collect demographic, family, and lifestyle information on students from day one — but there's no validated way to turn that information into an early warning signal.
+By the time a school sees a final grade, the term is over and the window for intervention has closed. Schools already collect demographic, family, and lifestyle information on students from day one, but there's no validated way to turn that information into an early warning signal.
 
-**Objective:** Determine whether pre-term data (excluding in-term grades G1/G2) can accurately predict pass/fail outcomes, and identify which factors contribute most to failure risk — so a school could direct limited intervention resources (tutoring, counseling, outreach) toward the students who need them most.
+**Objective:** Determine whether pre-term data (excluding in-term grades G1/G2) can accurately predict pass/fail outcomes, and identify which factors contribute most to failure risk, so a school could direct limited intervention resources (tutoring, counseling, outreach) toward the students who need them most.
 
 **Research Questions:**
 1. Using only pre-term information, how accurately can we predict whether a student will pass or fail their final math grade, and which modeling technique performs best?
